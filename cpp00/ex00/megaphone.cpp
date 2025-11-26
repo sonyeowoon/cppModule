@@ -26,11 +26,12 @@ int main(int ac, char **av)
 		int j = 0;
 		while (av[i][j])
 		{
-			av[i][j] = toupper(av[i][j]);
+			char c = std::toupper(static_cast<unsigned char>(av[i][j]));
+			std::cout << c;
 			j++;
 		}
-		std::cout << av[i];
 		i++;
 	}
 	std::cout << std::endl;
+	return (0);
 }
