@@ -7,7 +7,7 @@
 class	PhoneBook {
 private:
 	Contact	contacts[8];
-	int		cnt;
+	int		count;
 	int		next;
 
 public:
